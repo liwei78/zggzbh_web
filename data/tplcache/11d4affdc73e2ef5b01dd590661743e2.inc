@@ -1,0 +1,1 @@
+<li>[field:description/] [<a href="[field:arcurl/]" target="_blank">详细</a>]</li>

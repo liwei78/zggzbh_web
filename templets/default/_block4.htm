@@ -1,0 +1,51 @@
+<div class="block4 mb6">
+  <div class="box" style="height: 230px; margin-right: 0;">
+    <div class="boxTitle">
+      <strong><a href="/html/guzhenfengsu/" target="_blank">古镇风俗</a></strong>
+    </div>
+    <div class="threeColumns">
+      <div class="boxPicList column" style="">
+        <ul>
+          {dede:arclist typeid='8' type='image' row='6' titlelen='100' type='image'}
+          <li>
+            <div>
+              <a href="[field:arcurl/]" target="_blank" ><img src="[field:litpic/]" title="[field:title/]" alt="" width="80" height="70" /></a>
+            </div>
+            <div class="pictitle">
+              <a href="[field:arcurl/]" target="_blank">[field:shorttitle/]</a>
+            </div>
+          </li>
+          {/dede:arclist}
+          <div class="clearfix"></div>
+        </ul>
+      </div>
+      <div class="column" style="width: 280px;">
+        <div class="boxList list">
+          <ul class="ico">
+            {dede:arclist typeid='8' row='8' titlelen='100' limit='0,8'}
+              <li>
+                <a href="[field:arcurl/]" target="_blank">[field:title/]</a>
+              </li>
+            {/dede:arclist}
+          </ul>
+        </div>
+      </div>
+      <div class="column" style="width: 280px; margin-right: 0px;">
+        <div class="boxList list">
+          <ul class="ico">
+            {dede:arclist typeid='8' row='8' titlelen='100' limit='8,8'}
+              <li>
+                <a href="[field:arcurl/]" target="_blank">[field:title/]</a>
+              </li>
+            {/dede:arclist}
+          </ul>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+</div>
+<div class="banner">
+  {dede:myad name='index-ad3'/}
+</div>

@@ -1,0 +1,64 @@
+<div class="banner">
+  {dede:myad name='top-banner'/}
+</div>
+<div class="banner">
+  {dede:myad name='top-banner2'/}
+</div>
+<div class="header">
+  <div class="logo">
+    <a href="/" target="_blank"><img src="/images/logo.jpg"></a>
+  </div>
+  <div class="nav">
+    <ul>
+      {dede:channel type='top' row='12'}
+      	<li><a href='[field:typeurl/]' [field:rel/] target='_blank'>[field:typename/]</a></li>
+    	{/dede:channel}
+      <div class="clearfix"></div>
+    </ul>
+  </div>
+  <div class="clearfix"></div>
+</div>
+<div class="action">
+  <table width="100%" cellspacing="4" cellpadding="4">
+    <tr height="30">
+      <td valign="middle">
+        <form name="userlogin" action="/member/index_do.php" method="POST">
+      		<input type="hidden" name="fmdo" value="login">
+      		<input type="hidden" name="dopost" value="login">
+      		<input type="hidden" name="keeptime" value="604800">
+      		用户名 <input type="text" name="userid" size="10" class="input">
+      		密码 <input type="password" name="pwd" size="10" class="input">
+      		<button type="submit" class="btn">登录</button>
+      		<a href="/member/index_do.php?fmdo=user&dopost=regnew" target="_blank">注册</a>
+      		<a href="/member/resetpassword.php" target="_blank">找回密码</a>
+    		</form>
+      </td>
+      <td valign="middle">
+        <a href="#" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.zggzbh.com');">设为首页</a>
+        |
+        <a href="#" onClick="window.external.AddFavorite(location.href,document.title)">加入收藏</a>
+        |
+        <a href="" target="_blank">在线留言</a>
+      </td>
+      <td valign="middle">
+        <form  name="formsearch" action="{dede:global.cfg_cmsurl/}/plus/search.php" target="_blank">
+          站内检索
+          <input type="hidden" name="kwtype" value="0" />
+          <input type="hidden" name="searchtype" value="titlekeyword" />
+          <input name="q" type="text" class="input" size="20" />
+          <button type="submit" class="btn">搜索</button>
+          |
+          <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>
+        </form>
+      </td>
+    </tr>
+  </table>
+</div>
+<div class="area mb6">
+  <ul>
+    {dede:flink row='34' typeid='3' titlelen='100' /}
+    <div class="clearfix"></div>
+  </ul>
+  <div class="clearfix"></div>
+</div>
+
