@@ -16,6 +16,4 @@ $row = $dsql->GetOne("SELECT id FROM `#@__archives` WHERE title LIKE '$t' ");
 if(is_array($row))
 {
     echo "提示：系统已经存在标题为 $t 的文档";
-}else{
-  echo "正确";
 }
