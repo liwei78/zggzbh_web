@@ -101,7 +101,7 @@ else if($dopost=='save')
     $title = htmlspecialchars(cn_substrR($title,$cfg_title_maxlen));
     $shorttitle = cn_substrR($shorttitle,36);
     $color =  cn_substrR($color,7);
-    $writer =  cn_substrR($writer,20);
+    $writer =  cn_substrR($writer,100);
     $source = cn_substrR($source,30);
     $description = cn_substrR($description,$cfg_auot_description);
     $keywords = cn_substrR($keywords,60);
